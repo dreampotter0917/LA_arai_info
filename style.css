@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+p{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.bg-swicher{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/yume_1.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    margin: auto;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    letter-spacing: 10px;
+    font-size: 66px;
+    color: #f4f3f9;
+    text-shadow: 0px 5px 2px rgba(0,0,0,0.3);
+
+}
+
+h2{
+    text-align: left;
+    padding-top: 77px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #f4f3f9;
+    font-size: 50px;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+/*スクロールダウン全体の場所*/
+.scrolldown1{
+    /*描画位置※位置は適宜調整してください*/
+	position:absolute;
+	left:50%;
+	bottom:10px;
+    /*全体の高さ*/
+	height:50px;
+}
+
+/*Scrollテキストの描写*/
+.scrolldown1 span{
+    /*描画位置*/
+	position: absolute;
+left: -27px;
+	top: -36px;
+    
+    font-weight: 900;
+    /*テキストの形状*/
+	color: #f4f3f9;
+	font-size: 20px;
+	letter-spacing: 0.05em;
+}
+
+/* 線の描写 */
+.scrolldown1::after{
+	content: "";
+    /*描画位置*/
+	position: absolute;
+	top: 0;
+    /*線の形状*/
+	width: 5px;
+	height: 30px;
+	background: #f4f3f9;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+	animation: pathmove 1.4s ease-in-out infinite;
+	opacity:0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove{
+	0%{
+		height:0;
+		top:0;
+		opacity: 0;
+	}
+	30%{
+		height:30px;
+		opacity: 1;
+	}
+	100%{
+		height:0;
+		top:50px;
+		opacity: 0;
+	}
+}
+
+
+#pro{
+}
+
+.pro_contents{
+    display: flex;
+}
+
+
+#pro img{
+    border-radius: 80px 0px 80px 0px; /* 左上、右上、右下、左下 */
+    width: 200px;
+    margin: 40px 0 40px;   
+}
+
+.myphoto{
+    background-color: #ffd64d;
+    width: 50vw;
+    text-align: center;
+    border-radius: 0px 200px 0px 0px;
+    padding-bottom: 100px;
+}
+
+.mytext{
+    padding: 170px 30px 30px 30px;
+    text-align: center;
+}
+
+.font_big{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.mytext_big{
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+
+.font_normal{
+    text-align: left;
+    
+    font-size: 15px;
+}
+
+.mytext_normal{
+    margin-bottom: 30px;
+    margin-left: 137px;
+    line-height: 2.5rem;
+}
+
+.font_accent{
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.mytext_accent{
+    margin-left: 135px;
+    text-align: left;
+}
+
+
+
+
+#limited{
+    background-color: #9bc01c;
+    padding: 20px;
+}
+
+.slider{
+    margin: auto;
+    width: 80vw;
+}
+
+.slick-initialized .slick-slide{
+    background-color: #ffffff;
+    border: 5px solid #ffd64d;
+    height: 400px;
+    margin: 50px 50px 0 50px;
+    padding: 50px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.slide-img{
+    width: 50%;
+    margin-left: 60px;
+    margin-top: -23px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+
+
+.slide-box{
+    width: 70%;
+    text-align: center;
+    margin-left: -50px;
+}
+
+
+.slider P{
+  margin-left: 30px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.slider_accernt{
+    color: #fa6775;
+}
+
+.slide-text{
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+
+.container {
+    position: relative;
+    background: #9bc01c;
+    height: 20vh;
+  }
+  
+  .wave {
+    position: absolute;
+    height: 104px;
+    width: 100%;
+    background: #9bc01c;
+    bottom: 0;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave::before {
+    width: 53%;
+    height: 109%;
+    background-color: #fa6775;
+    right: 0%;
+    top: 60%;
+  }
+  .wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: #9bc01c;
+    left: -1.5%;
+    top: 40%;
+  }
+
+
+  #work{
+    background-color: #fa6775;
+    padding-bottom: 30px;
+  }
+
+.work_contents{
+    margin: 30px 276px ;
+}
+
+#work p{
+    margin-top: 70px;
+}
+
+  #work img{
+    width: 400px;
+    margin: 0 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #ff2f41
+  }
+
+  .want_flex{
+    display: flex;
+  }
+
+  .work_item{
+    margin: 50px 30px;
+  }
+
+  .slider_accernt{
+    font-size: 20px;
+  }
+
+  .slide-text{
+    margin-top: 60px;
+    width: 350px;
+    color: #161414;
+  }
+
+.mark{
+	background:linear-gradient(transparent 68%, #fa6775 50%);
+}
+
+
+#contact{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#contact h2{
+    color: #161414;
+    text-align: left;
+    margin-bottom: 30px;
+    
+}
+
+#contact p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#contact a{
+    text-decoration: none;
+    color: #223a70;
+}
+
+#contact a:hover{
+    color: #fa6775;
+}
