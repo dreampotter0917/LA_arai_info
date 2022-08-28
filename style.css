@@ -38,7 +38,7 @@ h2{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: #f4f3f9;
     font-size: 50px;
-    margin-left: 20px;
+    margin-left: 40px;
     font-style: italic;
 }
 
@@ -293,7 +293,7 @@ left: -27px;
   }
 
 .mark{
-	background:linear-gradient(transparent 68%, #fa6775 50%);
+	background:linear-gradient(transparent 68%, #f12f42 50%);
 }
 
 
@@ -306,12 +306,14 @@ left: -27px;
     color: #161414;
     text-align: left;
     margin-bottom: 30px;
+    margin-left: 40px;
     
 }
 
 #contact p {
     font-size: 25px;
     margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 #contact a{
@@ -321,4 +323,42 @@ left: -27px;
 
 #contact a:hover{
     color: #fa6775;
+}
+
+.rasukaru{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.hassyu{
+    display: block;
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: -60px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: left;
+    
+}
+footer{
+    height: 50px;
+    background-color: #ffd64d;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 10px;
+    padding-top: 10px;
+}
+
+
+
+.ImgBox-Img{
+  transition-duration: 0.3s;
+}
+.ImgBox-Img:hover{
+  transform: scale(1.05);
+  transition-duration: 0.3s;
 }
